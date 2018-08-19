@@ -1,8 +1,7 @@
-(function (){
+(function ()　{
     'use strict';
     const userNameInput = document.getElementById('user-name');
-    const assessmentButton = document.
-getElementById('assessment');
+    const assessmentButton = document.getElementById('assessment');
     const resultDivided = document.getElementById('result-area');
     const tweetDivided = document.getElementById('tweet-area');
     
@@ -69,7 +68,7 @@ getElementById('assessment');
         '{userName}のいいところは気配りです。{userName}の配慮が多くの人を救っています。',
         '{userName}のいいところはその全てです。ありのままの{userName}自身がいいところなのです。',
         '{userName}のいいところは自制心です。やばいと思ったときにしっかり衝動を抑えられる{userName}が皆から評価されています。',
-    };
+    ];
     
     /**
     * 名前の文字列を渡すと診断結果を返す関数
@@ -93,9 +92,9 @@ getElementById('assessment');
         console.assert(
             assessment('太郎') === '太郎のいいところは決断力です。太郎がする決断にいつも助けられる人がいます。',
             '診断結果の文言の特定の部分を名前に置き換える処理が正しくありません。'
-        };
+        );
         console.assert(
             assessment('太郎') === assessment('太郎'),
             '入力が同じ名前なら同じ診断結果を出力する処理が正しくありません。'
-        };
+        );
     })();
